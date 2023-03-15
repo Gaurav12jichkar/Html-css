@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        margin: 0px;
+        background:rgba(31, 6, 34, 4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+
+    #calculator {
+        max-width: 100%;
+        background-color: #020f1c;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    #display {
+        width: 150px;
+        height: 56px;
+        font-size: 20px;
+        text-align: right;
+        margin-bottom: 10px;
+        padding: 20px;
+        border-radius: 5px;
+        color: #e0e1dd;
+        background-color: rgba(13, 27, 42, 0.3);
+        border: none;
+        box-sizing: border-box;
+    }
+
+    .oper {
+        color: #219ebc;
+      
+    }
+
+    #ac {
+        color: #350a99;
+        background-color: aquamarine;
+    }
+
+    .equal {
+        width: calc(60%-10px);
+    }
+
+    button {
+        width: calc(65%-10px);
+        height: 50px;
+        font-size: 22px;
+        margin: 10px 5px;
+        border: none;
+        border-radius: 8px;
+        float: left;
+        background-color: rgb(13, 27, 42);
+        color: #e0e1dd;
+        
+
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: rgb(13, 175, 156);
+    }
+
+    button:active {
+        transform: scale(1.75);
+        box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.19), 0 1.5px 1.5px rgba(0, 0, 0, 0.23)
+    }
+    
+</style>
+<!-- <script>
+    const display = document.querySelector("#display");
+    const button = document.querySelectorAll("button");
+    button.forEach(btn)=> {
+        btn.addEventListener("click", () =>){
+            if (btn.id === "=") {
+                display.value = eval(display.value);
+
+            }
+            else if (btn.id === "ac") {
+                display.value = "";
+            }
+            else if (btn.id == "de") {
+                display.value = display.value.slice(0, -1);
+
+            }
+            else {
+                display.value += btn.id;
+            }
+        };
+    };
+        
+    
+</script> -->
+
+<body>
+    <div id="calculator">
+        <input type="text" id="display">
+        <br>
+        <button id="ac" class="oper">AC</button>
+        <button id="de" class="oper">DE</button>
+        <button id="." class="oper">.</button>
+       
+        <br>
+        <button id="7">7</button>
+        <button id="8">8</button>
+        <button id="9">9</button>
+        <button id="*" class="oper">*</button>
+        <br>
+        <button id="4">4</button>
+        <button id="5">5</button>
+        <button id="6">6</button>
+        <button id="-" class="oper">-</button>
+        <br>
+        <button id="1">1</button>
+        <button id="2">2</button>
+        <button id="3">3</button>
+        <button id="+" class="oper">+</button>
+        <br>
+
+        <button id="00">00</button>
+        <button id="0">0</button>
+        <button id="=" class="eqaul">=</button>
+        <button id="/" class="oper">/</button>
+       
+    </div>
+</body>
+
+</html>

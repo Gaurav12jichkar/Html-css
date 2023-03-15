@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .card{
+    display: grid;
+    grid-template-rows: 96px48px 48px 1fr;
+    grid-template-columns: 1fr;
+    border-radius: 20px 20px 16px 16px ;
+    background-color: white;
+    cursor: pointer;
+    max-width: 348px;
+ }
+ .card:hover{
+    box-shadow: rgba(0,0 ,0,0.35 )0px, 5px, 15px;
+ }
+ .back{
+    grid-row: 1/3;
+    grid-column: 1/-1;
+ }
+ .back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+ }
+ .profile{
+    grid-row:2/4;
+    grid-column: 1/-1;
+    padding: 0 24px;
+    2-index:1;
+ }
+ .profileid{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 16px 0px 8px 0px;
+
+ }
+ .profile img{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+
+ }
+ .profileid{
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    padding: 0px 24px 24px 24px;
+ }
+
+</style>
+</head>
+<body>
+    <div class="card">
+        <div class="back">
+
+            <img src="hel.jpg" alt="backgr">
+        </div>
+        <div class="profile">
+            <img src="gaurav.jpg" alt="gaurav">
+        </div> 
+        <div class="content">
+            <p class="profileid">
+                gaurav jichkar
+            </p>i'am c++ devlpoer, love working in html,css,bootstrap
+        </div>
+        </div>
+         
+    
+</body>
+</html>

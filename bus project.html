@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: rgb(93, 13, 73);
+        
+    }
+    #logo{
+     margin: 3px 20px;
+    }
+    #logo img{
+        height: 90px;
+        width: 80px;
+        margin: 3px 20px;
+        border-radius: 50%;
+    }
+    #navbar ul{
+        display: flex;
+    }
+    #navbar ul li{
+       
+        list-style: none;
+        font-size: 1.3rem; 
+    }
+    #navbar ul li a{
+        color: white;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+       
+    }
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    #navbar ul li a:hover{
+        color: black;
+        background-color: aquamarine;
+    }
+/* home */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+        background-image: url("bus2.jpg");
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;  
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.primary{
+font-size: 2.8rem;
+padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(13, 193, 61);
+    color: white;
+    margin: 12px;
+    font-size: 0.7rem;
+     border-radius:8px ;
+     cursor: pointer;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    display: inline;
+}
+#services .box img{
+    height: 100px;
+}
+
+.service-container h1{
+    font-size: 20px;
+}
+
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="gaurav.jpg" alt="gaurav buses">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">about us</a></li>
+            <li class="item"><a href="#"> services</a></li>
+            <li class="item"><a href="#"> Contact us</a></li>
+            <li class="item"><a href="#">prices</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+<h1 class="primary">Welcome to online bus booking site</h1>
+<p>Lorem ipsum d ducimus tempora error commodi eveniet obcaecati, providentaque. Do</p>
+    <p>consectetur ullam itaque. Dolor reiciendiofficii consequun</p>
+        <button class="btn">Book now</button>
+    </section>
+
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+    
+
+    <section class="service-container">
+        <h1 class="primary-services">Our services</h1>
+      <div id="services">
+        <div class="box">
+            <img src="bus.jpg" alt="">
+            <h2 class="secondry-services1">pick from nearest stop</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente enim, 
+                cumque nam vitae inventore sequi dicta quidem.
+                Nostrum, sed, magnam fugit omnis </p>
+                <img src="newbus1.jpeg" alt="">
+                <h2 class="secondry-services2">get snacks in bus</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente enim, 
+                cumque nam vitae inventore sequi dicta quidem.
+                Nostrum, sed, magnam fugit omnis </p>
+                <img src="newbus2.jpeg" alt="">
+                <h2 class="secondry-services3">Ac /non ac sits available</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente enim, 
+                cumque nam vitae inventore sequi dicta quidem.
+                Nostrum, sed, magnam fugit omnis </p>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
